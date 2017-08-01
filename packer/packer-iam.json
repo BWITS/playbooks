@@ -57,6 +57,21 @@
             ]
         },
         {
+            "Sid": "PackerSpotInstanceAccess",
+            "Action": [
+                "ec2:CancelSpotFleetRequests",
+                "ec2:DescribeSpotFleetInstances",
+                "ec2:DescribeSpotFleetRequests",
+                "ec2:DescribeSpotFleetRequestHistory",
+                "ec2:ModifySpotFleetRequest",
+                "ec2:RequestSpotFleet"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "*"
+            ]
+        },
+        {
             "Sid": "PackerVolumeAccess",
             "Action": [
                 "ec2:AttachVolume",
